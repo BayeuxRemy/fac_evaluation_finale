@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+body .container {
+  margin: auto;
+  width: 50%;
+  background-color: white;
+}
+
+body .container header {
+  display: flex;
+  flex-direction: row;
+}
+
+body .container header .logo img {
+  width: 70%;
+  margin: 5px;
+}
+
+body .container header .menu .fas {
+  font-size: 2vw;
+  margin: 5px;
+  color: white;
+  background-color: #b3d143;
+  border: 5px solid #b3d143;
+}
+
+body .container .image_haut img {
+  width: 100%;
+}
+
+body .container .main .stats .petit_logo {
+  width: 15%;
+  margin: auto;
+}
+
+body .container .main .stats .petit_logo img {
+  width: 100%;
+}
+
+body .container .main .stats .slogan {
+  text-align: center;
+  color: #f8a900;
+  font-size: 3vw;
+  margin: 0 2px;
+}
+
+body .container .main .stats .icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body .container .main .stats .icons .icon {
+  width: 40%;
+  margin: 5%;
+}
+
+body .container .main .stats .icons .icon img {
+  margin-left: 20%;
+  width: 50%;
+  height: 50%;
+}
+
+body .container .main .stats .icons .icon p {
+  text-align: center;
+  font-size: 3vw;
+}
+
+body .container .main .stats .icons .coop {
+  color: #c3a575;
+}
+
+body .container .main .stats .icons .install {
+  color: #b3d143;
+}
+
+body .container .main .stats .icons .prod {
+  color: #f8a900;
+}
+
+body .container .main .stats .icons .capital {
+  color: #00afec;
+}
+
+body .container .details {
+  margin: 0 2%;
+  color: #6d6f71;
+}
+
+body .container .details .titre {
+  font-size: 3vw;
+  text-align: center;
+  margin: 5% 0;
+}
+
+body .container .details .text {
+  font-size: 2vw;
+  margin: 5% 0;
+}
+
+body .container .details ul {
+  font-size: 2vw;
+  margin-left: 10%;
+}
+
+body .container .details .comprendre .button {
+  font-size: 3vw;
+  margin: 5% auto;
+  width: 100%;
+  background-color: #6d6f71;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+}
+
+body .container .details .comprendre .button p, body .container .details .comprendre .button i {
+  margin: 2% 0;
+}
+
+body .container .details .souscrire .right {
+  font-size: 4vw;
+  position: relative;
+  right: -85%;
+}
+
+body .container .details .souscrire .button {
+  text-align: center;
+  font-size: 3vw;
+  margin: 0 auto;
+  width: 45%;
+  background-color: #f8a900;
+  color: black;
+  border-radius: 15px;
+}
+
+body .container .details .souscrire .button p {
+  padding: 5%;
+}
+
+body .container .details .souscrire .button i {
+  border-radius: 50%;
+  background-color: white;
+}
+
+body .container article .actu {
+  background-color: #f8a900;
+  margin: 5% 0;
+  color: white;
+}
+
+body .container article .actu .photo img {
+  width: 80%;
+  margin-left: 2%;
+}
+
+body .container article .rubrique {
+  padding-top: 5%;
+  font-size: 3vw;
+}
+
+body .container article .titre {
+  margin: 1%;
+  text-align: center;
+  font-size: 2vw;
+}
+
+body .container article .text {
+  padding: 2%;
+  font-size: 2vw;
+}
+
+body .bold {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */

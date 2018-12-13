@@ -1,0 +1,176 @@
+@import 'cssreset';
+$vert : #b3d143 ;
+$blanc : white;
+$jaune : #f8a900;
+$marron : #c3a575;
+$bleu : #00afec;
+$gris : #6d6f71;
+body {
+    background-color: #1f1f1f;
+
+    .container {
+        margin: auto;
+        width: 50%;
+        background-color: $blanc;
+        header {
+            display : flex;
+            flex-direction: row;
+            .logo {        
+                img {
+                    width: 70%;
+                    margin : 5px;
+                }
+            }
+            .menu {
+                .fas {
+                    font-size: 2vw;
+                    margin: 5px;
+                    color : $blanc;
+                    background-color: $vert;
+                    border : 5px solid $vert;
+                }
+            }
+        }
+        .image_haut {
+             img {
+                width: 100%;
+             }
+        }
+        .main {
+            .stats {
+                .petit_logo {
+                    width: 15%;
+                    margin: auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .slogan {
+                    text-align: center;
+                    color :$jaune;
+                    font-size: 3vw;
+                    margin: 0 2px;
+                }
+                .icons {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .icon {
+                        width: 40%;
+                        margin: 5%;
+                        img {
+                            margin-left: 20%;
+                            width: 50%;
+                            height: 50%;
+                        }
+                        p {
+                            text-align:center;
+                            font-size: 3vw;
+                        }
+                    }
+                    .coop {
+                        color : $marron;
+                    }
+                    .install {
+                        color : $vert;
+                    } 
+                    .prod {
+                        color : $jaune;
+                    }
+                    .capital {
+                        color : $bleu;
+                    }
+                }
+            }
+        }
+        .details {
+            margin: 0 2%;
+            color : $gris;
+            .titre {
+                font-size: 3vw;
+                text-align: center;
+                margin: 5% 0;
+            }
+            .text {
+                font-size: 2vw;
+                margin: 5% 0;
+            }
+            ul {  
+                font-size: 2vw;
+                margin-left: 10%;
+            }  
+            
+            .comprendre {
+                .button {
+                    font-size: 3vw;
+                    margin: 5% auto;
+                    width: 100%;
+                    background-color: $gris;
+                    border-radius: 15px;
+                    color : $blanc;
+                    text-align : center;
+
+                    p,i {
+                        margin:2% 0;
+                    }
+                }
+            }
+            .souscrire {
+                .right {
+                    font-size: 4vw;
+                    position: relative;
+                    right: -85%;
+                   //float: right;
+                }
+                .button {
+                    text-align: center;
+                    font-size: 3vw;
+                    margin: 0 auto;
+                    width: 45%;
+                    background-color: $jaune;
+                    color: black;
+                    border-radius: 15px;
+                    p {
+                        padding: 5%;
+                    }
+                    i {
+                        border-radius : 50%;
+                        background-color: $blanc;
+                    }
+                }
+            }
+        }
+        article {
+            .actu {
+                background-color: $jaune;
+                margin: 5% 0;
+                color : $blanc;
+                .photo {
+                    img 
+                    {
+                        width: 80%;
+                        margin-left: 2%;
+                    }
+                }
+            }
+            .rubrique {
+                padding-top : 5%;
+                font-size: 3vw;
+            }
+            .titre {
+                margin: 1%;
+                text-align: center;
+                font-size: 2vw;
+            }
+            .text {
+                padding: 2%;
+                font-size: 2vw;
+            }
+        }
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+    
+}
+
