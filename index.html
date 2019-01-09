@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/toggle.js"></script>
 </head>
 <body>
 <div class="container">
@@ -14,10 +15,23 @@
         <div class="logo">
             <img src="logos/EnergiesCollectives_rectangle_Logo_ajuste.svg" alt="logo"/>
         </div>
-        <div class="menu">
-                <i class="fas fa-bars"></i>
-        </div>
+        <i class="fas fa-bars" id="menuIco"></i>
     </header>
+    <div id="menu" class="menu">
+            <nav>
+                <ul class="bold">
+                     <a href="#"><li>En savoir plus<img class="right" src="svg/fleche_droite.svg"/></li></a>
+                     <hr>
+                     <a href="#"><li>Nous découvrir<img class="right" src="svg/fleche_droite.svg"/></li></a>
+                     <hr>
+                     <a href="#"><li>Nos Installations<img class="right" src="svg/fleche_droite.svg"/></li></a>
+                     <hr>
+                     <a href="#"><li>Economisons<img class="right" src="svg/fleche_droite.svg"/></li></a>
+                     <hr>
+                     <a href="#"><li class="button">Souscrire</li></a>
+                 </ul>
+            </nav>
+    </div>
     <div class="image_haut">
         <img src='Photos/20161202_101925.jpg' alt='Electricien'/>
     </div>
@@ -65,7 +79,7 @@
                         <li>Agir ensemble pour l’intérêt collectif : une personne= une voix.</li>
                     </ul>
                 </p>
-                <a href="#"><div class="button"><p>Comprendre notre modèle de production</p><i class="fas fa-plus-circle"></i></div></a>
+                <a href="#"><div class="button"><p class="bold">Comprendre notre modèle de production</p><i class="fas fa-plus-circle"></i></div></a>
             </div>
             <div class="souscrire">
                 <p class="titre bold">
@@ -85,29 +99,78 @@
     </div>
     <article>
         <div class="actu">
-            <p class="rubrique bold">ACTUALITES <img src="svg/fleche_gauche.svg"/> <img src="svg/fleche_droite.svg"/></p>
-            <div class="photo"><img src="Photos/IMG_20170121_122143.jpg"></div>
-            <p class="titre bold">Un 24 novembre de célébration</p>
-            <p class="text">Nous inaugurerons prochainement les toitures photovoltaïques de Baratier ! L’occasion de célébrer deux projets marquants pour cette année 2018,
-            qui concrétisent l’entrée d’une nouvelle commune au sociétariat d’Énergies Collectives. Si la matinée d’inauguration et "l’apéro-énergie" sont ouverts à tous,
-            l’après-midi sera consacrée à un temps de réflexion et d’échange entre tous les coopérateurs de la SCIC.</p>
+            <p class="rubrique bold">ACTUALITES <img class="right" src="svg/fleche_gauche.svg"/> <img class="right" src="svg/fleche_droite.svg"/></p>
+            <div class="contenu">
+                <div class="photo"><img src="Photos/IMG_20170121_122143.jpg"></div>
+                <div class="article">
+                    <p class="titre bold">Un 24 novembre de célébration</p>
+                    <p class="text">Nous inaugurerons prochainement les toitures photovoltaïques de Baratier ! L’occasion de célébrer deux projets marquants pour cette année 2018,
+                    qui concrétisent l’entrée d’une nouvelle commune au sociétariat d’Énergies Collectives. Si la matinée d’inauguration et "l’apéro-énergie" sont ouverts à tous,
+                    l’après-midi sera consacrée à un temps de réflexion et d’échange entre tous les coopérateurs de la SCIC.</p>
+                    <div class="more"><i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
         </div>
-        <div>
+        <div class="demarche">
             <p class="rubrique bold">NOTRE DEMARCHE</p>
+            <div class="contenu">
+                <div class="photo"><img src="Photos/IMG_4106.jpg"></div>
+                <div class="article">
+                    <p class="titre bold">Notre démarche</p>
+                    <p class="text">Energies collectives est une Société Coopérative d’Intérêt Collectif qui a pour but de produire de l’électricité renouvelable, locale et citoyenne, mais également d’œuvrer pour réduire le gaspillage énergétique.
+                    Créée par qui, quand ? En 2014, un petit groupe de quatre citoyens, lance ce beau projet (...)</p>
+                    <div class="more"><i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
         </div>
-        <div>
+        <div class="instal">
             <p class="rubrique bold">NOS INSTALLATIONS</p>
+            <div class="contenu">
+                <div class="photo"><img src="Photos/P1140365.JPG"></div>
+                <div class="article">
+                    <p class="titre bold">Atelier Burger, Embrun</p>
+                    <p class="text">
+                        <ul>
+                            <li>Date de mise en service : décembre 2016</li>
+                            <li>Puissance : 8.85 kWc</li>
+                            <li>Surface du système photovoltaïque : 51 m²</li>
+                            <li>Modules : 30 modules de 295 Wc, Aleo Solar S79 Fullblack</li>
+                            <li>Onduleur : ABB 8.5 TL</li>
+                            <li>Azimut/Sud : 14°</li>
+                            <li>Inclinaison toiture : 15°</li>
+                            <li>Production 2017 : 13.3 MWh soit 1506 kWh/kWc</li>
+                            <li>Dans la zone artisanale (...)</li>
+                        </ul>
+                    </p>
+                    <div class="more"><i class="fas fa-plus-circle"></i></div>
+                    <a href="#"><div class="button"><p class="bold">Voir toutes nos installations</p></i></div></a>
+                </div>>
+            </div>
         </div>
-        <div>
-            <p class="rubrique bold">TEMOIGNAGES</p>
+        <div class="temoin">
+            <p class="rubrique bold">TEMOIGNAGES <img class="right" src="svg/fleche_droite.svg"/></p>
+            <div class="contenu">
+                <div class="photo"><img src="Photos/IMG_4107.jpg"></div>
+                <div class="article">
+                    <p class="titre bold">Mairie de Puy-Sanières </p>
+                    <p class="text">« S’engager à prendre des parts à Energies Collectives, c’est participer au développement des énergies renouvelables sans s’immiscer dans un dispositif financier classique qui enrichit l’installateur aux frais des abonnés EDF/ Régies... qui payent la note compensatoire.
+                    C’est un moyen de mettre sa propre (...)</p>
+                    <div class="more"><i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
         </div>
     </article>
     <footer>
-        <div>
-
+        <div class="links">
+            <div><a href="#"><p class="bold">Nous suivre <i class="fab fa-facebook"></i></p></a></div>
+            <div><a href="#"><p class="bold">Nous contacter <i class="far fa-envelope"></i></p></a></div>
+            <div><a href="#"><p class="bold">Rechercher <i class="fas fa-search"></i></p></a></div>
+            <div><label for="email" class="bold">Abonnez-vous à la Newsletter</label>
+            <input type="email" placeholder="Saisissez votre email"><button><i class="fas fa-check"></i></button></div>
         </div>
-        <div>
-
+        <div class="partenaires">
+            <p>Nos partenaires : <img src="partenaires/energie-partagee_logo.png" /><img src="partenaires/syme05_logo.png" /><img src="partenaires/paca_logo.png" /><img src="partenaires/nef_logo.png" />
+            <img src="partenaires/Initiative-nord-hautes-alpes_logo.png" /><img src="partenaires/enercoop_logo.png" /><img src="partenaires/parc_ecrins.png" /><img src="partenaires/udess-05_logo-seul.png" /><img src="partenaires/omnis_logo.png" /></p>
         </div>
     </footer>
 </div>
